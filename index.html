@@ -223,16 +223,25 @@ function compareFoods(select, input, unitSelect) {
   const food = select.value;
   const cost = parseFloat(input.value);
   const unit = unitSelect.value;
-  const costPerLb = unit === 'lb' ? cost : cost * 2.20462;
-  const costPerKg = unit === 'kg' ? cost : cost / 2.20462;
+
+  // ✅ Corrected conversion logic
+  const costPerKg = unit === 'lb' ? cost * 2.20462 : cost;
+  const costPerLb = unit === 'kg' ? cost / 2.20462 : cost;
+
   const proteinPer100g = foodData[food];
   const proteinPerKg = proteinPer100g * 10;
   const proteinPerDollar = proteinPerKg / costPerKg;
+
   allItems.push({ name: food, proteinPerDollar: +proteinPerDollar });
+
   tbody.innerHTML += `
     <tr>
-      <td>${food}</td><td>${costPerLb.toFixed(2)}</td><td>${costPerKg.toFixed(2)}</td><td>${proteinPerDollar.toFixed(2)}</td>
+      <td>${food}</td>
+      <td>${costPerLb.toFixed(2)}</td>
+      <td>${costPerKg.toFixed(2)}</td>
+      <td>${proteinPerDollar.toFixed(2)}</td>
     </tr>`;
+
   updateRankingTable();
 }
 
