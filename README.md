@@ -17,7 +17,7 @@ Whether you're an athlete, fitness enthusiast, student, or just trying not to wa
 ## How to Use
 
 1. Clone or download this repo  
-2. Open `index.html` in your browser  
+2. Open `https://rag96.github.io/cost-per-gram-protein-tool/index.html` in your browser  
 3. Enter each protein powder's info: name, cost, weight, scoop size, and protein per scoop  
 4. Add food items (optional) for a side-by-side protein per dollar comparison  
 5. View all calculated results, highlights, and rankings instantly
