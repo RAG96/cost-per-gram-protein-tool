@@ -1,77 +1,3 @@
-# cost-per-gram-protein-tool
-A browser-based tool to compare up to 10 protein powders by cost, scoop size, protein per dollar, and monthly value. Built for lifters, athletes, students, and anyone who tracks their intake.
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protein Cost Comparison</title>
-  <style>
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      padding: 8px;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    input, select {
-      width: 120px;
-    }
-    .highlight {
-      background-color: #d4f4dd;
-    }
-  </style>
-</head>
-<body>
-
-<h2 title="Hover to highlight highest and lowest values">Protein Powder Comparison</h2>
-<div id="proteinPowderInputs"></div>
-<button onclick="addProteinPowderRow()">Add Protein Powder</button>
-<br><br>
-<table id="proteinPowderTable">
-  <thead>
-    <tr>
-      <th>Name</th><th>Cost</th><th>Weight (lb)</th><th>Weight (kg)</th><th>Scoop Size (g)</th><th>Protein/Scoop (g)</th>
-      <th>Total Scoops</th><th>Cost/lb</th><th>Cost/kg</th><th>Protein/$</th><th>Cost/Month</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<h2>Protein Powder Rankings Summary</h2>
-<div id="rankingSummary"></div>
-
-<h2>Food Protein per $ Comparison</h2>
-<div id="foodInputs"></div>
-<button onclick="addFoodRow()">Add Food Item</button>
-<br><br>
-<table id="foodTable">
-  <thead>
-    <tr>
-      <th>Food Item</th><th>Cost/lb</th><th>Cost/kg</th><th>Protein/$</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<h3>Overall Protein per $ Ranking</h3>
-<table id="rankingTable">
-  <thead>
-    <tr><th>Rank</th><th>Item Name</th><th>Protein/$</th></tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<script>
-// JavaScript functions already included and working in previous edits
-</script>
-
-</body>
-</html>
-
-<!-- README.md -->
-<!--
 # Protein Cost Efficiency Tool 💪📊
 
 Protein Cost Efficiency Tool is a simple, browser-based app for comparing protein powders by cost, scoop size, protein per dollar, and long-term value.
@@ -119,10 +45,10 @@ No sign-up. No bloat. Just the numbers that matter.
 
 ## Possible Future Features
 
-- CSV export
-- Mobile-friendly layout
-- Adjustable scoop frequency
-- Protein per calorie comparison
+- CSV export  
+- Mobile-friendly layout  
+- Adjustable scoop frequency  
+- Protein per calorie comparison  
 - Calorie and macro efficiency tracker
 
 ## Contributions
@@ -133,5 +59,3 @@ Pull requests are welcome. Feel free to submit bug fixes, improvements, or ideas
 
 This project was created during a late-night productivity spike, balancing nutrition planning, budgeting, and a dash of chaos.  
 Built for anyone who wants gains without guesswork.
--->
-
