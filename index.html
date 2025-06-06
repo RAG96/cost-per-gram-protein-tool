@@ -225,8 +225,8 @@ function compareFoods(select, input, unitSelect) {
   const unit = unitSelect.value;
 
   // ✅ Corrected conversion logic
-  const costPerKg = unit === 'lb' ? cost / 2.20462 : cost;
-  const costPerLb = unit === 'kg' ? cost * 2.20462 : cost;
+  const costPerKg = unit === 'lb' ? cost / 0.453592 : cost;
+  const costPerLb = unit === 'kg' ? cost * 0.453592 : cost;
 
   const proteinPer100g = foodData[food];
   const proteinPerKg = proteinPer100g * 10;
